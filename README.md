@@ -1,4 +1,4 @@
-# Golang Workspace Template
+# DR Bot
 
 Run this to alter GOPATH
 
