@@ -1,7 +1,7 @@
 package main
 
 import (
-	"BotCommand"
+	botcommand "BotCommand"
 	"Misc"
 	"net"
 )
@@ -33,7 +33,7 @@ func botHandler(c net.Conn) {
 			return
 		}
 		data := buf[0:nr]
-		go BotCommand.ReadBotMessage(c, string(data))
+		go botcommand.ReadBotMessage(c, string(data))
 		// fmt.Printf("->: %s", string(data))
 		// _, err = c.Write(data)
 		// if err != nil {
