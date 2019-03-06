@@ -1,0 +1,102 @@
+INFO 2019/03/06 10:49:53 util.go:49: Server Has Started
+INFO 2019/03/06 10:53:49 util.go:49: Server Has Started
+INFO 2019/03/06 11:01:12 util.go:55: Server Has Started
+INFO 2019/03/06 11:44:32 util.go:55: Input from server has initialized
+INFO 2019/03/06 11:44:32 util.go:55: Server Has Started
+INFO 2019/03/06 11:45:25 util.go:55: Input from server has initialized
+INFO 2019/03/06 11:45:25 util.go:55: Server Has Started
+INFO 2019/03/06 12:07:47 util.go:55: Server Has Started
+INFO 2019/03/06 12:12:19 util.go:55: Server Has Started
+INFO 2019/03/06 12:30:26 util.go:55: Server Has Started
+INFO 2019/03/06 12:33:00 util.go:55: Server Has Started
+INFO 2019/03/06 12:41:03 util.go:55: Server Has Started
+INFO 2019/03/06 12:43:09 util.go:55: Server Has Started
+INFO 2019/03/06 13:05:23 util.go:55: Server Has Started
+INFO 2019/03/06 13:06:07 util.go:55: Server Has Started
+INFO 2019/03/06 13:06:38 util.go:55: Can't Add Bot Name Taken Generated
+INFO 2019/03/06 13:08:26 util.go:55: Server Has Started
+INFO 2019/03/06 13:09:30 util.go:55: Server Has Started
+INFO 2019/03/06 13:09:41 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:09:41 util.go:55: Server Has Started
+INFO 2019/03/06 13:09:56 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:09:56 util.go:55: Server Has Started
+INFO 2019/03/06 13:10:18 util.go:55: Can't Add Bot >>  Name Taken Generated
+INFO 2019/03/06 13:22:05 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:22:05 util.go:55: Server Has Started
+INFO 2019/03/06 13:24:19 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:24:19 util.go:55: Server Has Started
+INFO 2019/03/06 13:25:10 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:25:10 util.go:55: Server Has Started
+INFO 2019/03/06 13:52:53 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:52:53 util.go:55: Server Has Started
+INFO 2019/03/06 13:53:09 util.go:55: Can't Add Bot >>  Name Taken Generated
+INFO 2019/03/06 13:53:39 util.go:55: Can't Add Bot >>  Name Taken Generated
+INFO 2019/03/06 13:55:46 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:55:46 util.go:55: Server Has Started
+INFO 2019/03/06 13:55:53 util.go:55: meron  Bot Joined
+INFO 2019/03/06 13:59:48 util.go:55: Input from server has initialized
+INFO 2019/03/06 13:59:48 util.go:55: Server Has Started
+WARNING 2019/03/06 14:00:55 util.go:39: No bot with such name
+INFO 2019/03/06 14:01:08 util.go:55: meron  Bot Joined
+INFO 2019/03/06 14:02:21 util.go:55: Input from server has initialized
+INFO 2019/03/06 14:02:21 util.go:55: Server Has Started
+INFO 2019/03/06 14:02:28 util.go:55: meron  Bot Joined
+INFO 2019/03/06 14:03:01 util.go:55: Input from server has initialized
+INFO 2019/03/06 14:03:01 util.go:55: Server Has Started
+INFO 2019/03/06 14:09:25 util.go:55: Input from server has initialized
+INFO 2019/03/06 14:09:25 util.go:55: Server Has Started
+INFO 2019/03/06 15:32:14 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:32:14 util.go:55: Server Has Started
+INFO 2019/03/06 15:32:23 util.go:55: meron  Bot Joined
+INFO 2019/03/06 15:32:33 util.go:55: meron  Bot has left room
+INFO 2019/03/06 15:34:05 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:34:05 util.go:55: Server Has Started
+INFO 2019/03/06 15:34:16 util.go:55: Unknow Connection has left the room
+INFO 2019/03/06 15:34:38 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:34:38 util.go:55: Server Has Started
+INFO 2019/03/06 15:34:47 util.go:55: Bot < meron > has Joined
+INFO 2019/03/06 15:38:35 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:38:35 util.go:55: Server Has Started
+DANGER 2019/03/06 15:38:43 util.go:31: Bot is not yet saved
+INFO 2019/03/06 15:40:01 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:40:01 util.go:55: Server Has Started
+DANGER 2019/03/06 15:40:12 util.go:31: Bot is not yet saved
+INFO 2019/03/06 15:40:32 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:40:32 util.go:55: Server Has Started
+DANGER 2019/03/06 15:40:37 util.go:31: Bot is not yet saved
+INFO 2019/03/06 15:40:37 util.go:55: Unknow Bot has left the room
+INFO 2019/03/06 15:40:56 util.go:55: Bot < meron > has Joined
+DANGER 2019/03/06 15:41:24 util.go:31: Bot is not yet saved
+INFO 2019/03/06 15:41:24 util.go:55: Unknow Bot has left the room
+INFO 2019/03/06 15:41:41 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/06 15:42:22 util.go:55: Can't Add Bot >>  Name Taken Generated
+DANGER 2019/03/06 15:42:25 util.go:31: Bot is not yet saved
+INFO 2019/03/06 15:42:25 util.go:55: Unknow Bot has left the room
+INFO 2019/03/06 15:45:29 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:45:29 util.go:55: Server Has Started
+INFO 2019/03/06 15:46:01 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:46:01 util.go:55: Server Has Started
+INFO 2019/03/06 15:46:08 util.go:55: Bot < meron > has Joined
+INFO 2019/03/06 15:46:16 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/06 15:57:20 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:57:20 util.go:55: Server Has Started
+INFO 2019/03/06 15:57:28 util.go:55: Bot < meron > has Joined
+INFO 2019/03/06 15:57:49 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/06 15:59:07 util.go:55: Input from server has initialized
+INFO 2019/03/06 15:59:07 util.go:55: Server Has Started
+INFO 2019/03/06 15:59:14 util.go:55: Bot < meron > has Joined
+INFO 2019/03/06 16:02:41 util.go:55: Input from server has initialized
+INFO 2019/03/06 16:02:41 util.go:55: Server Has Started
+INFO 2019/03/06 16:02:48 util.go:55: Bot < meron > has Joined
+INFO 2019/03/06 16:02:58 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/06 16:05:45 util.go:55: Input from server has initialized
+INFO 2019/03/06 16:05:45 util.go:55: Server Has Started
+INFO 2019/03/06 16:05:54 util.go:55: Bot < meron > has Joined
+INFO 2019/03/06 16:06:10 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/06 16:07:59 util.go:55: Input from server has initialized
+INFO 2019/03/06 16:07:59 util.go:55: Server Has Started
+INFO 2019/03/06 16:08:07 util.go:55: Bot < meron > has Joined
+INFO 2019/03/06 16:08:16 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/06 16:09:14 util.go:55: Bot < jhon > has left the room
+INFO 2019/03/06 16:13:32 util.go:55: Bot < meron > has left the room
+INFO 2019/03/06 16:13:44 util.go:55: Bot < jjjj > has Joined
