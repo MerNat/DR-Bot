@@ -2,7 +2,7 @@ package main
 
 import (
 	botcommand "BotCommand"
-	"Misc"
+	misc "Misc"
 	"net"
 )
 
@@ -10,9 +10,9 @@ import (
 func InitConn(netType string, address string, port string) {
 	myConn, err := net.Listen(netType, address+":"+port)
 	if err != nil {
-		Misc.OutputLogger.Fatalln("Error Creating Server!", err)
+		misc.OutputLogger.Fatalln("Error Creating Server!", err)
 	}
-
+	misc.Info("Server Has Started")
 	for {
 		// Listen for an incoming connection.
 		botClient, err := myConn.Accept()
