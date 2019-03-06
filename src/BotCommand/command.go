@@ -1,22 +1,22 @@
 package botcommand
 
 import (
+	misc "Misc"
+	"data"
 	"fmt"
 	"net"
 	"strings"
 )
 
-var botConnection net.Conn
-
 // ReadBotMessage Reads the message comming from a bot and make it ready to process
 func ReadBotMessage(botConn net.Conn, theMessage string) {
-	fmt.Print(theMessage)
-	botConnection = botConn
+	botConnection := botConn
+
 	theCommand := strings.Split(strings.TrimSpace(theMessage), " ")
 
 	Command := strings.TrimPrefix(theCommand[0], ">")
 
-	handleMessage(Command, theCommand)
+	handleMessage(Command, theCommand, botConnection)
 	// if theMessage == "hello" {
 	// 	_, err := botConnection.Write([]byte("hello"))
 	// 	if err != nil {
@@ -25,13 +25,19 @@ func ReadBotMessage(botConn net.Conn, theMessage string) {
 	// }
 }
 
-func handleMessage(command string, theCommand []string){
-	switch command{
+func handleMessage(command string, theCommand []string, c net.Conn) {
+	switch command {
 	case "setbotname":
-		// botName := theCommand[1]
+		theBot := data.Bot{
+			FirstName:  theCommand[1],
+			Connection: c,
+		}
+		err := theBot.AddBot()
+		if err != nil {
+			misc.Info("Can't Add Bot >> ", err)
+		}
+	default:
+		//Printout to the output logger
+		fmt.Println(strings.Join(theCommand,""))
 	}
-}
-
-func sendMessage(c net.Conn){
-
 }
