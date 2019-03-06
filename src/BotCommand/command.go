@@ -17,12 +17,6 @@ func ReadBotMessage(botConn net.Conn, theMessage string) {
 	Command := strings.TrimPrefix(theCommand[0], ">")
 
 	handleMessage(Command, theCommand, botConnection)
-	// if theMessage == "hello" {
-	// 	_, err := botConnection.Write([]byte("hello"))
-	// 	if err != nil {
-	// 		Misc.OutputLogger.Fatalln("Error When sending", err)
-	// 	}
-	// }
 }
 
 func handleMessage(command string, theCommand []string, c net.Conn) {
@@ -38,6 +32,12 @@ func handleMessage(command string, theCommand []string, c net.Conn) {
 		}
 	default:
 		//Printout to the output logger
-		fmt.Println(strings.Join(theCommand,""))
+		bot, err := data.GetBotByConnection(c)
+		if err != nil {
+			misc.Danger("Bot is not yet saved")
+			c.Close()
+			return
+		}
+		fmt.Println(bot.FirstName, ">> ", strings.Join(theCommand, " "))
 	}
 }

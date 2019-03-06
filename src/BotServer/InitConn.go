@@ -5,7 +5,6 @@ import (
 	misc "Misc"
 	"bufio"
 	"data"
-	"fmt"
 	"net"
 	"os"
 	"strings"
@@ -35,21 +34,20 @@ func botHandler(c net.Conn) {
 		nr, err := c.Read(buf)
 		if err != nil {
 			bot, err := data.GetBotByConnection(c)
-			if err == nil{
-				bot.Remove()
-				misc.Info(bot.FirstName," Bot has left room")
+			if err == nil {
+				err := bot.RemoveBot()
+				if err != nil {
+					misc.Warning("Bot ", bot.FirstName, " Can't be removed", err)
+					return
+				}
+				misc.Info("Bot <", bot.FirstName, "> has left the room")
 				return
-			}else{
 			}
+			misc.Info("Unknow Bot has left the room")
 			return
 		}
 		data := buf[0:nr]
 		go botcommand.ReadBotMessage(c, string(data))
-		// fmt.Printf("->: %s", string(data))
-		// _, err = c.Write(data)
-		// if err != nil {
-		// 	fmt.Println(err)
-		// }
 	}
 }
 
@@ -79,6 +77,17 @@ func handleInput(msgFromServer string) {
 	}
 }
 
+func generateMessage(theCommand []string) (newCommand string) {
+	for i := 1; i < len(theCommand); i++ {
+		if i == 1 {
+			newCommand = theCommand[i]
+		} else {
+			newCommand = newCommand + " " + theCommand[i]
+		}
+	}
+	return
+}
+
 func handleInputCommands(botName string, theCommand []string) {
 	if botName != "" {
 		//Send it to specific Bot
@@ -86,7 +95,9 @@ func handleInputCommands(botName string, theCommand []string) {
 		if err != nil {
 			misc.Warning(err)
 		} else {
-			bot.SendBotMsg(strings.Join(theCommand, ""))
+			bot.SendBotMsg(generateMessage(theCommand))
 		}
+	} else {
+		data.SendToAll(strings.Join(theCommand, " "))
 	}
 }

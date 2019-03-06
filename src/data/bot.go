@@ -37,7 +37,7 @@ func (bot *Bot) AddBot() (err error) {
 	} else {
 		//Add the Bot
 		Bots = append(Bots, *bot)
-		misc.Info(bot.FirstName, " Bot Joined")
+		misc.Info("Bot <", bot.FirstName, "> has Joined")
 	}
 	return
 }
@@ -99,11 +99,39 @@ func GetBotByConnection(conn net.Conn) (theBot Bot, err error) {
 }
 
 //RemoveBot remove and deletes the bot from the slice Bots
-func (bot *Bot) RemoveBot() {
+func (bot *Bot) RemoveBot() (err error) {
+	index, err := bot.GetBotsIndex()
 
+	if err != nil {
+		return
+	}
+	bot.Connection.Close()
+	Bots = append(Bots[:index], Bots[index+1:]...)
+	return
 }
 
 //GetBotsIndex returns the bots index in Bots slice
-func (bot *Bot) GetBotsIndex() {
+func (bot *Bot) GetBotsIndex() (index int, err error) {
+	isBot := false
+	for k, theBot := range Bots {
+		if theBot.Connection == bot.Connection {
+			isBot = true
+			index = k
+			break
+		}
+	}
+	if !isBot {
+		err = errors.New("No Such Bot Found")
+	}
+	return
+}
 
+//SendToAll sends a message to all Bots
+func SendToAll(msg string) {
+	for _, bot := range Bots {
+		_, err := bot.Connection.Write([]byte(msg))
+		if err != nil {
+			misc.Danger("Error When sending to ", bot.FirstName, err)
+		}
+	}
 }
