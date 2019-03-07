@@ -100,3 +100,28 @@ INFO 2019/03/06 16:08:16 util.go:55: Bot < jhon > has Joined
 INFO 2019/03/06 16:09:14 util.go:55: Bot < jhon > has left the room
 INFO 2019/03/06 16:13:32 util.go:55: Bot < meron > has left the room
 INFO 2019/03/06 16:13:44 util.go:55: Bot < jjjj > has Joined
+INFO 2019/03/07 12:09:01 util.go:55: Input from server has initialized
+INFO 2019/03/07 12:09:01 util.go:55: Server Has Started
+INFO 2019/03/07 12:10:24 util.go:55: Bot < pascal > has Joined
+INFO 2019/03/07 13:06:38 util.go:55: Input from server has initialized
+INFO 2019/03/07 13:06:38 util.go:55: Server Has Started
+INFO 2019/03/07 13:10:22 util.go:55: Input from server has initialized
+INFO 2019/03/07 13:10:22 util.go:55: Server Has Started
+INFO 2019/03/07 13:10:48 util.go:55: Input from server has initialized
+INFO 2019/03/07 13:10:48 util.go:55: Server Has Started
+INFO 2019/03/07 13:16:31 util.go:55: Bot < rashford > has Joined
+INFO 2019/03/07 13:16:31 util.go:55: Bot < rashford > has left the room
+INFO 2019/03/07 14:38:39 util.go:55: Unknow Bot has left the room
+INFO 2019/03/07 14:39:49 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/07 14:44:29 util.go:55: Bot < jhon > has left the room
+INFO 2019/03/07 14:44:40 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/07 14:44:58 util.go:55: Bot < jhon > has left the room
+INFO 2019/03/07 14:46:37 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/07 15:02:43 util.go:55: Bot < jhon > has left the room
+INFO 2019/03/07 15:50:54 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/07 15:51:54 util.go:55: Can't Add Bot >>  Name Taken Generated
+INFO 2019/03/07 15:56:09 util.go:55: Unknow Bot has left the room
+INFO 2019/03/07 15:58:07 util.go:55: Bot < jhon > has left the room
+INFO 2019/03/07 15:58:27 util.go:55: Bot < jhon > has Joined
+INFO 2019/03/07 15:58:52 util.go:55: Can't Add Bot >>  Name Taken Generated
+INFO 2019/03/07 15:58:52 util.go:55: Bot < meron > has Joined

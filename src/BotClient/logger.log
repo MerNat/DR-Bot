@@ -1,0 +1,34 @@
+DANGER 2019/03/07 13:07:24 util.go:31: cannot connect to client
+DANGER 2019/03/07 13:07:54 util.go:31: cannot connect to client
+INFO 2019/03/07 13:07:54 util.go:55: Client started
+INFO 2019/03/07 13:07:54 util.go:55: Text to send
+DANGER 2019/03/07 13:08:59 util.go:31: cannot connect to client
+INFO 2019/03/07 13:08:59 util.go:55: Client started
+INFO 2019/03/07 13:08:59 util.go:55: Text to send
+ERROR 2019/03/07 13:09:46 util.go:45: cannot connect to server
+INFO 2019/03/07 13:10:32 util.go:55: Client started
+INFO 2019/03/07 13:10:32 util.go:55: Text to send
+INFO 2019/03/07 13:10:55 util.go:55: &{{0xc0000ca080}} 
+
+
+INFO 2019/03/07 13:10:55 util.go:55: message from server: 
+INFO 2019/03/07 13:10:55 util.go:55: Text to send
+INFO 2019/03/07 13:11:47 util.go:55: &{{0xc0000ca080}} 
+
+
+INFO 2019/03/07 13:11:47 util.go:55: message from server: 
+INFO 2019/03/07 13:11:47 util.go:55: Text to send
+INFO 2019/03/07 13:11:50 util.go:55: &{{0xc0000ca080}} hhhh
+
+
+INFO 2019/03/07 13:11:50 util.go:55: message from server: 
+INFO 2019/03/07 13:11:50 util.go:55: Text to send
+INFO 2019/03/07 13:16:31 util.go:55: Client started
+INFO 2019/03/07 14:36:13 util.go:55: Client Connected
+INFO 2019/03/07 14:39:49 util.go:55: Client Connected
+INFO 2019/03/07 14:44:40 util.go:55: Client Connected
+INFO 2019/03/07 14:46:37 util.go:55: Client Connected
+INFO 2019/03/07 15:50:54 util.go:55: Client Connected
+INFO 2019/03/07 15:51:54 util.go:55: Client Connected
+INFO 2019/03/07 15:58:27 util.go:55: Client Connected
+INFO 2019/03/07 15:58:52 util.go:55: Client Connected
