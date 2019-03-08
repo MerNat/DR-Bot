@@ -16,13 +16,9 @@ func cmd(command []string, cc net.Conn) {
 	for _, com := range command {
 		msg = msg + " " + com
 	}
-	c := exec.Command(fullcommand[0], fullcommand[1:]...)
+
+	c := exec.Command(command[1], command[2:]...)
 	if err := c.Run(); err != nil {
 		m.Warning("Cannot Run Command", err)
 	}
-
-}
-
-func run() {
-
 }

