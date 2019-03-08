@@ -167,3 +167,5 @@ INFO 2019/03/08 12:20:36 util.go:55: Bot < linux_2779410 > has Joined
 INFO 2019/03/08 12:21:17 util.go:55: Input from server has initialized
 INFO 2019/03/08 12:21:17 util.go:55: Server Has Started
 INFO 2019/03/08 12:21:36 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 13:17:11 util.go:72: Input from server has initialized
+INFO 2019/03/08 13:17:11 util.go:72: Server Has Started

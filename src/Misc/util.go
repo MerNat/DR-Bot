@@ -1,6 +1,7 @@
 package misc
 
 import (
+	"encoding/json"
 	"log"
 	"os"
 )
@@ -8,7 +9,18 @@ import (
 var fileLogger *log.Logger
 var outputLogger *log.Logger
 
+//ServerConfig struct
+type ServerConfig struct {
+	Address string
+	Port    string
+	NetType string
+}
+
+//ServerConfiguration has the required configuration for the server
+var ServerConfiguration ServerConfig
+
 func init() {
+	loadConfig()
 	file, err := os.OpenFile("logger.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 
 	if err != nil {
@@ -19,12 +31,17 @@ func init() {
 	fileLogger = log.New(file, "INFO ", log.Ldate|log.Ltime|log.Lshortfile)
 }
 
-func loadConfi(){
-	
+func loadConfig() {
+	file, err := os.OpenFile("config.json", os.O_RDONLY, 0666)
+	if err != nil {
+		log.Fatalln("Can't open Configuration file.")
+	}
+	decoder := json.NewDecoder(file)
+	err = decoder.Decode(&ServerConfiguration)
 }
 
 // Danger logs only danger infos to loggers.
-func Danger(msg...interface{}) {
+func Danger(msg ...interface{}) {
 	outputLogger.SetPrefix("DANGER ")
 	outputLogger.Println(msg...)
 	fileLogger.SetPrefix("DANGER ")
@@ -32,7 +49,7 @@ func Danger(msg...interface{}) {
 }
 
 // Warning logs only warning infos to loggers.
-func Warning(msg...interface{}) {
+func Warning(msg ...interface{}) {
 	outputLogger.SetPrefix("WARNING ")
 	outputLogger.Println(msg...)
 	fileLogger.SetPrefix("WARNING ")
@@ -40,7 +57,7 @@ func Warning(msg...interface{}) {
 }
 
 // Err function prints the err and exit with err code 1
-func Err(msg...interface{}) {
+func Err(msg ...interface{}) {
 	fileLogger.SetPrefix("ERROR ")
 	fileLogger.Println(msg...)
 	outputLogger.SetPrefix("ERROR ")
