@@ -4,6 +4,7 @@ import (
 	botclientcommand "BotClientCommand"
 	misc "Misc"
 	"bufio"
+	"fmt"
 	"net"
 	"os"
 )
@@ -42,6 +43,7 @@ func handleClientConn(c net.Conn) {
 
 		}
 		data := string(buf[0:nr])
+		fmt.Println(data)
 		if data == "Name Taken" {
 			_, err = c.Write([]byte(">setbotname " + botclientcommand.Getnick()))
 		}

