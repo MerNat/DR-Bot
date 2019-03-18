@@ -4,7 +4,7 @@ import (
 	m "Misc"
 )
 
-// Init ServerSide Implemenation
+// Initialization of ServerSide Implemenation
 func main() {
 	go InitInput()
 	InitConn(m.ServerConfiguration.NetType, m.ServerConfiguration.Address, m.ServerConfiguration.Port)
