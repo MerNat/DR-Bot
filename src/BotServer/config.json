@@ -1,5 +1,5 @@
 {
-    "API": "theApi",
-    "CHAT_ID": "-1001329388485",
-    "CHAT_TYPE": "channel"
+    "Address": "localhost",
+    "Port": "8080",
+    "NetType": "tcp"
 }

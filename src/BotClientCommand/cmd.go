@@ -1,7 +1,7 @@
 package botclientcommand
 
 import (
-	m "Misc"
+	m "MiscClient"
 	"net"
 	"os/exec"
 )

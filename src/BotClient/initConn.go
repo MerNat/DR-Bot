@@ -21,14 +21,6 @@ func initClientConn(netType string, addr string, port string) {
 	misc.Info("Client Connected")
 	go handleClientInput(Conn)
 	handleClientConn(Conn)
-	// reader := bufio.NewReader(os.Stdin)
-	// for {
-	// 	text, err := reader.ReadString('\n')
-	// 	if err != nil {
-	// 		misc.Err("connot read from input", err)
-	// 	}
-	// 	handleClientInput(text)
-	// }
 }
 
 func handleClientConn(c net.Conn) {

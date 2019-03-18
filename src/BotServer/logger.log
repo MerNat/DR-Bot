@@ -167,3 +167,20 @@ INFO 2019/03/08 12:20:36 util.go:55: Bot < linux_2779410 > has Joined
 INFO 2019/03/08 12:21:17 util.go:55: Input from server has initialized
 INFO 2019/03/08 12:21:17 util.go:55: Server Has Started
 INFO 2019/03/08 12:21:36 util.go:55: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 13:17:11 util.go:72: Input from server has initialized
+INFO 2019/03/08 13:17:11 util.go:72: Server Has Started
+INFO 2019/03/08 13:58:07 util.go:85: Input from server has initialized
+INFO 2019/03/08 13:58:07 util.go:85: Server Has Started
+INFO 2019/03/08 13:58:13 util.go:85: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 14:00:05 util.go:85: Bot < linux_2779410 > has left the room
+INFO 2019/03/08 14:00:07 util.go:85: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 14:02:54 util.go:85: Bot < linux_2779410 > has left the room
+INFO 2019/03/08 14:02:56 util.go:85: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 14:04:04 util.go:85: Bot < linux_2779410 > has left the room
+INFO 2019/03/08 14:04:07 util.go:85: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 14:08:07 util.go:85: Bot < linux_2779410 > has left the room
+INFO 2019/03/08 14:08:10 util.go:85: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 14:08:59 util.go:85: Bot < linux_2779410 > has left the room
+INFO 2019/03/08 14:09:03 util.go:85: Bot < linux_2779410 > has Joined
+INFO 2019/03/08 14:17:54 util.go:85: Bot < linux_2779410 > has left the room
+INFO 2019/03/08 14:17:57 util.go:85: Bot < linux_2779410 > has Joined

