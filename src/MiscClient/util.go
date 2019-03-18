@@ -9,25 +9,15 @@ import (
 var (
 	fileLogger   *log.Logger
 	outputLogger *log.Logger
-	clientConfig       ClientConfiguration
+	ClientConfig ClientConfiguration
 )
 
 //ClientConfiguration the client config details
 type ClientConfiguration struct {
-	BOT_URL      string
+	BOT_URL   string
 	CHAT_ID   string
 	CHAT_TYPE string
 }
-
-//ServerConfig struct
-type ServerConfig struct {
-	Address string
-	Port    string
-	NetType string
-}
-
-//ServerConfiguration has the required configuration for the server
-var ServerConfiguration ServerConfig
 
 func init() {
 	loadConfig()
@@ -47,8 +37,8 @@ func loadConfig() {
 		log.Fatalln("Can't open Configuration file.", err)
 	}
 	decoder := json.NewDecoder(file)
-	err = decoder.Decode(&ServerConfiguration)
-	if err!=nil{
+	err = decoder.Decode(&ClientConfig)
+	if err != nil {
 		log.Fatalln("Can't decode config file.", err)
 	}
 }

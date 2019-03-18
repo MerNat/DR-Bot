@@ -1,7 +1,11 @@
 package main
 
+import (
+	m "Misc"
+)
+
 // Init ServerSide Implemenation
 func main() {
 	go InitInput()
-	InitConn("tcp4", "localhost", "8080")
+	InitConn(m.ServerConfiguration.NetType, m.ServerConfiguration.Address, m.ServerConfiguration.Port)
 }
