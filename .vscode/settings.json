@@ -1,5 +1,5 @@
 {
-    "go.gopath": "/home/aphya16/Desktop/DR-Bot",
-    "go.inferGopath": true,
+    "go.gopath": "/home/meron/Desktop/MProjects/DR-Bot",
+    "go.inferGopath": false,
     "git.ignoreLimitWarning": true
 }

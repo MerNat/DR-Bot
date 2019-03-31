@@ -184,3 +184,5 @@ INFO 2019/03/08 14:08:59 util.go:85: Bot < linux_2779410 > has left the room
 INFO 2019/03/08 14:09:03 util.go:85: Bot < linux_2779410 > has Joined
 INFO 2019/03/08 14:17:54 util.go:85: Bot < linux_2779410 > has left the room
 INFO 2019/03/08 14:17:57 util.go:85: Bot < linux_2779410 > has Joined
+INFO 2019/03/31 13:23:44 util.go:85: Input from server has initialized
+INFO 2019/03/31 13:23:44 util.go:85: Server Has Started
