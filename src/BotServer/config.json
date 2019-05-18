@@ -1,0 +1,5 @@
+{
+    "Address": "localhost",
+    "Port": "8080",
+    "NetType": "tcp"
+}

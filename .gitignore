@@ -1,0 +1,4 @@
+src/BotClient/logger.log
+src/BotServer/logger.log
+**/.vscode
+**/pkg
