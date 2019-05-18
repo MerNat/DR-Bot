@@ -1,5 +1,6 @@
 {
-    "API": "theApi",
+    "API": "yourAPI",
+    "BOT_URL": "https://api.telegram.org/bot",
     "CHAT_ID": "-1001329388485",
     "CHAT_TYPE": "channel"
 }
