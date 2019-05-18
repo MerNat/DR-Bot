@@ -15,6 +15,7 @@ var (
 //ClientConfiguration the client config details
 type ClientConfiguration struct {
 	BOT_URL   string
+	API		  string
 	CHAT_ID   string
 	CHAT_TYPE string
 }
