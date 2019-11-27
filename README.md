@@ -5,7 +5,7 @@
 
 
 ## It's Features?
-- Has a lot of features, but for now it also sends you a message to your telegram inbox. Cool ha! :fire:
+- Has a lot of features, but for now it sends you a message to your telegram inbox. Cool ha! :fire:
 
 
 ## So how's it working?
