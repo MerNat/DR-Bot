@@ -20,7 +20,8 @@ func sendMessageToChannel(message string) {
 	message = strings.Replace(message, " ", "", -1)
 	resp, err := http.Get(m.ClientConfig.BOT_URL + m.ClientConfig.API + "/sendMessage?chat_id=" + m.ClientConfig.CHAT_ID + "&text=@" + BotName+":" + message)
 	if err != nil {
-		log.Fatalln("cannot read url body")
+		log.Println("[Telegram] Can't connect!")
+		return
 	}
 	defer resp.Body.Close()
 
