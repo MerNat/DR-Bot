@@ -18,7 +18,7 @@ func InitConn(netType string, address string, port string) {
 	if err != nil {
 		misc.Err("Error Creating Server!", err)
 	}
-	misc.Info("Server Has Started")
+	misc.Info("Server started on " + address + ":" + port)
 	for {
 		// Listen for an incoming connection.
 		botClient, err := myConn.Accept()
